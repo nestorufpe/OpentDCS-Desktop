@@ -67,6 +67,10 @@ class _MyHomePageState extends State<MyHomePage> {
       'Index 2: File',
       style: optionStyle,
     ),
+    Text(
+      'Index 3: Download',
+      style: optionStyle,
+    ),
   ];
 
   void _onItemTapped(int index) async {
@@ -259,7 +263,11 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.upload),
-            label: 'Arquivo',
+            label: 'Upload',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.download),
+            label: 'Download',
           ),
         ],
         currentIndex: _selectedIndex,
